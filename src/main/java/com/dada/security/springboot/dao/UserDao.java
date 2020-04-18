@@ -20,7 +20,7 @@ public class UserDao {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    //根据账号查询用户信息
+    //根据账号查询用户信息1
     public UserDto getUserByUsername(String username){
         String sql = "select id,username,password,fullname,mobile from t_user where username = ?";
         //连接数据库查询用户
